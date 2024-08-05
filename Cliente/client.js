@@ -3,7 +3,7 @@ const readline = require('readline-sync');
 
 const options = {
     port: 4000,
-    host: '192.168.1.46'  // Reemplaza 'EC2_PUBLIC_IP' con la dirección IP pública de tu instancia de EC2
+    host: '18.118.20.119'  // Reemplaza 'EC2_PUBLIC_IP' con la dirección IP pública de tu instancia de EC2
 };
 
 const client = net.createConnection(options);
