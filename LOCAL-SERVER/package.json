@@ -1,0 +1,16 @@
+{
+  "name": "LOCAL-SERVER",
+  "version": "1.0.0",
+  "description": "",
+  "main": "local-server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "net": "^1.0.2",
+    "node-thermal-printer": "^4.4.2"
+  }
+}
