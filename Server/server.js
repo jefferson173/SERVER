@@ -7,7 +7,7 @@ ec2Server.on('connection', (socket) => {
         console.log('Datos recibidos del cliente:', data.toString());
 
         const localClient = new net.Socket();
-        localClient.connect(5000, '209.45.94.161', () => { // Reemplaza 'LOCAL_IP' con la IP local de tu servidor intermedio
+        localClient.connect(5000, '192.168.18.30', () => { // Reemplaza 'LOCAL_IP' con la IP local de tu servidor intermedio
             localClient.write(data.toString());
         });
 
