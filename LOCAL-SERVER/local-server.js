@@ -13,8 +13,10 @@ localServer.on('connection', (socket) => {
         console.log('Datos recibidos del servidor EC2:', data.toString());
         printer.alignCenter();
         printer.println(data.toString());
+        printer.printQR(data.toString());
         printer.cut();
         printer.execute();
+        socket.write('Recibido!')
     });
 
     socket.on('close', () => {
