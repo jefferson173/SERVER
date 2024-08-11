@@ -7,7 +7,7 @@ ec2Server.on('connection', (socket) => {
         console.log('Datos recibidos del cliente:', data.toString());
 
         const localClient = new net.Socket();
-        localClient.connect(5000, 'prueba-kayser.ddns.net', () => { // Reemplaza 'LOCAL_IP' con la IP local de tu servidor intermedio
+        localClient.connect(5000, '38.25.17.154', () => { // Reemplaza 'LOCAL_IP' con la IP local de tu servidor intermedio
             localClient.write(data.toString());
         });
 
